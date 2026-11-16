@@ -1,0 +1,22 @@
+{
+  "name": "agent-cli-mcp-bridges",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Generic MCP server that exposes a headless coding-agent CLI (Claude, Hermes, Grok, or custom).",
+  "bin": {
+    "agent-cli-mcp": "src/server.js"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "express": "^4.19.2",
+    "zod": "^3.23.8"
+  }
+}
